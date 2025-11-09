@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Best Friend Books</title>
+    <meta name="description" content="A friendly neighborhood bookstore online. Curated reads, audiobooks, community." />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Nav -->
+    <nav class="container-fluid">
+      <ul>
+        <li class="brand">
+          <img src="images/logo-bw-notext.png" alt="Best Friend Books logo" />
+          <strong>Best Friend Books</strong>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#storefront">Storefront</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero with banner image -->
+    <header class="hero">
+      <div class="overlay">
+        <h1>Your cozy online bookstore</h1>
+        <p>Shop new favorites on Bookshop.org, listen on Libro.fm, and keep up with staff picks.</p>
+        <p><a role="button" href="#storefront">Browse the storefront</a></p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Storefront cards -->
+      <section id="storefront" aria-label="Storefront">
+        <h2>Storefront</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Bookshop.org</h3>
+            <p>Support indie bookstores while you shop. Our curated lists live on Bookshop.</p>
+            <p><a href="https://bookshop.org/shop/bestfriendbooks" target="_blank" rel="noopener">Visit our Bookshop</a></p>
+          </article>
+          <article class="card">
+            <h3>Libro.fm Audiobooks</h3>
+            <p>Own your audiobooks and support local bookshops with every listen.</p>
+            <p><a href="https://libro.fm/bestfriendbookshop" target="_blank" rel="noopener">Shop on Libro.fm</a></p>
+          </article>
+          <article class="card">
+            <h3>Staff Picks</h3>
+            <p>Monthly favorites for kids, YA, fiction, and nonfiction. Updated often.</p>
+            <p><a href="#blog">See latest picks</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <div class="about-flex">
+          <div>
+            <p>We’re a tiny, friendly bookstore project. Every purchase through our affiliate partners helps us fund community giveaways and storytime events.</p>
+          </div>
+          <figure>
+            <img src="images/logo-original.jpg" alt="Illustrated stack of books representing Best Friend Books" loading="lazy" />
+            <figcaption>Illustration by our resident artist (me!), featured on limited-run totes.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="newsletter">
+        <h2>Newsletter</h2>
+        <p>Occasional updates, staff picks, and event news. No spam, ever.</p>
+        <p><em>Embed your provider here (Substack, Buttondown, MailerLite, etc.).</em></p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:hello@bestfriendbooks.example">hello@bestfriendbooks.example</a></li>
+          <li>DMs: <a href="https://www.instagram.com/bestfriendbookshop/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </section>
+
+      <section id="blog">
+        <h2>Latest</h2>
+        <p>This section can link to your blog platform (Substack, Ghost, or a static blog) or be replaced later.</p>
+        <ul>
+          <li><a href="#">November picks: Cozy reads for long nights</a></li>
+          <li><a href="#">Audio spotlight: New memoirs on Libro.fm</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container" style="margin-top:3rem;">
+      <hr />
+      <div class="grid">
+        <p>© <span id="year"></span> Best Friend Books</p>
+        <div class="social" aria-label="Social links">
+          <a href="https://www.instagram.com/bestfriendbookshop/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="https://bsky.app/profile/yourhandle.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4c2 2 4.7 4 8 6 3.3-2 6-4 8-6-1 4-3 7-6 10 2 2 3 4 4 6-2-1-4-2-6-4-2 2-4 3-6 4 1-2 2-4 4-6-3-3-5-6-6-10z"/></svg>
+            <span class="sr-only">Bluesky</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
