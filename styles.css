@@ -305,6 +305,8 @@ main section:first-child {
   nav.container-fluid {
     flex-wrap: wrap;
     align-items: center;
+    max-height: none;
+    overflow: visible;
   }
 
   nav.container-fluid > ul:first-child {
