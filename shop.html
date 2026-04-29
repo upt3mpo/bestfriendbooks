@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Best Friend Books</title>
-    <meta name="description" content="A friendly neighborhood bookstore online. Curated reads, audiobooks, community." />
+    <title>Shop Online — Best Friend Books</title>
+    <meta name="description" content="Shop print books, ebooks, and audiobooks online through Best Friend Books." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet" />
@@ -26,9 +26,9 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Hello!</a></li>
+        <li><a href="index.html">Hello!</a></li>
         <li><a href="books.html">Books We Love</a></li>
-        <li><a href="shop.html">Shop Online</a></li>
+        <li><a href="shop.html" class="active">Shop Online</a></li>
         <li><a href="find.html">Find Us!</a></li>
         <li><a href="newsletter.html">Newsletter</a></li>
       </ul>
@@ -37,19 +37,35 @@
 
     <main class="container">
 
-      <!-- HELLO! -->
-      <section>
-        <div class="hello-grid">
-          <img src="images/bfb-fall.jpeg" alt="Best Friend Books pop-up booth" class="hello-photo" loading="lazy" />
-          <div class="hello-content">
-            <h2>About Us</h2>
-            <p>Best Friend Books is a pop-up kids’ bookshop and art studio located in Orange County, California.</p>
-            <p>We celebrate diverse voices and stories that foster empathy and imagination, helping people to see and be seen. We love books focused on food, family and friends (both two and four-legged!).</p>
-            <h2>How to Shop With Us</h2>
-            <p>We’d love to see you at one of our in-person events, but you can also support us online! Shop online with us at Bookshop.org or LibroFM.</p>
+      <!-- Bookshop.org -->
+      <section class="shop-section">
+        <div class="shop-grid">
+          <a href="https://bookshop.org/shop/bestfriendbooks" target="_blank" rel="noopener">
+            <img src="images/bookshop-promo.jpg" alt="Bookshop.org — support our store when you buy books online" class="shop-photo" loading="lazy" />
+          </a>
+          <div class="shop-content">
+            <h2>Bookshop.org</h2>
+            <p>Order books and ebooks online through our Bookshop.org page. Purchasing books through Bookshop.org supports independent booksellers like us.</p>
+            <p>Bookshop.org believes local bookstores are essential community hubs that foster culture, curiosity, and a love of reading — and they are committed to helping them thrive.</p>
+            <script src="https://bookshop.org/widgets.js" data-type="search" data-include-branding="false" data-affiliate-id="116886"></script>
+          </div>
+        </div>
+      </section>
+
+      <!-- LibroFM -->
+      <section class="shop-section">
+        <div class="shop-grid">
+          <a href="https://libro.fm/bestfriendbookshop" target="_blank" rel="noopener">
+            <img src="images/librofm.png" alt="Libro.fm — great audiobooks, greater impact" class="shop-photo" loading="lazy" />
+          </a>
+          <div class="shop-content">
+            <h2>LibroFM</h2>
+            <p>We've partnered with Libro.fm to make it possible for you to buy audiobooks directly through our bookstore. Browse the catalog of over 600,000 audiobooks, including New York Times best sellers, and discover hidden gems curated by our expert booksellers.</p>
+            <p>LibroFM provides many options for listening: subscriptions, on-demand purchases, and gift credits!</p>
+            <p>Now's a great time to shop indie. When you start a new one-credit-per-month membership supporting our bookstore with promo code <strong>SWITCH</strong>, we'll give you two bonus audiobook credits at sign-up.</p>
             <div class="button-group">
-              <a role="button" href="https://bookshop.org/shop/bestfriendbooks" target="_blank" rel="noopener">Shop Print / Ebooks</a>
-              <a role="button" href="https://libro.fm/bestfriendbookshop" target="_blank" rel="noopener">Shop Audiobooks</a>
+              <a role="button" href="https://libro.fm/bestfriendbookshop" target="_blank" rel="noopener">Explore Audiobooks</a>
+              <a role="button" href="https://libro.fm/switch?bookshop=bestfriendbookshop" target="_blank" rel="noopener">Make the Switch</a>
             </div>
           </div>
         </div>
