@@ -21,10 +21,12 @@
             <span class="brand-text">best friend books</span>
           </a>
         </li>
+        <li class="hamburger-item">
+          <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </li>
       </ul>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
       <ul class="nav-links">
         <li><a href="index.html">Hello!</a></li>
         <li><a href="books.html" class="active">Books We Love</a></li>
@@ -73,6 +75,13 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.querySelector('.hamburger').addEventListener('click', function() {
+        var nav = this.closest('nav');
+        nav.classList.toggle('nav-open');
+        this.setAttribute('aria-expanded', nav.classList.contains('nav-open'));
+      });
+    </script>
   </body>
 </html>
