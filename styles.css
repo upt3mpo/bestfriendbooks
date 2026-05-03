@@ -23,11 +23,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-optical-sizing: auto;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 a {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   font-optical-sizing: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 p {
@@ -43,6 +49,11 @@ nav.container-fluid {
 
 nav a {
   text-decoration: none;
+}
+
+ul.nav-links {
+  align-self: flex-end;
+  margin-bottom: -0.4rem;
 }
 
 nav ul:last-child a {
@@ -72,16 +83,16 @@ nav ul:last-child a.active {
 }
 
 .brand-logo {
-  height: 150px;
+  height: 108px;
   width: auto;
+  transform: translateY(-4px);
 }
 
 .brand-text {
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 2.25rem;
-  color: var(--text-color);
-  text-decoration: none;
-  white-space: nowrap;
+  height: 108px;
+  width: auto;
+  align-self: flex-end;
+  margin-bottom: -0.5rem;
 }
 
 .accent-bar {
@@ -125,6 +136,7 @@ input[type='submit'] {
   color: #1a1a1a;
   border: 1px solid var(--primary-focus);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 a[role='button']:hover,
@@ -243,6 +255,12 @@ footer p {
   color: var(--text-color);
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 footer .social {
   display: flex;
   gap: 0.75rem;
@@ -263,18 +281,6 @@ footer .social a {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-main.container {
-  padding-top: 40px;
-}
-
-main section {
-  margin-top: 3rem;
-}
-
-main section:first-child {
-  margin-top: 0;
 }
 
 .hello-grid {
@@ -319,11 +325,16 @@ main section:first-child {
     position: relative;
     max-height: none;
     overflow: visible;
+    align-items: flex-end;
+    padding-bottom: 0;
   }
 
   nav.container-fluid > ul:first-child {
     flex: 1;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   ul.nav-links {
@@ -355,10 +366,17 @@ main section:first-child {
 
   .brand-logo {
     height: 80px;
+    transform: translateY(20px);
+  }
+
+  .brand a {
+    align-items: flex-end;
   }
 
   .brand-text {
-    font-size: 1.75rem;
+    height: 80px;
+    align-self: flex-end;
+    margin-bottom: -1.5rem;
   }
 }
 
@@ -374,20 +392,6 @@ main section:first-child {
   border-radius: 8px;
 }
 
-.hello-content h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
-.hello-content p + h2 {
-  margin-top: 2rem;
-}
-
-.hello-content p {
-  font-weight: 700;
-}
-
 .button-group {
   display: flex;
   gap: 1rem;
@@ -395,23 +399,23 @@ main section:first-child {
   margin-top: 1.5rem;
 }
 
-.shop-section + .shop-section {
-  margin-top: 4rem;
-  padding-top: 4rem;
-  border-top: 1px solid var(--border-color);
-}
-
-.shop-grid {
+.shop-2col {
   display: grid;
-  grid-template-columns: 5fr 7fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
+  width: 75%;
+  margin-inline: auto;
 }
 
 @media (max-width: 768px) {
-  .shop-grid {
+  .shop-2col {
     grid-template-columns: 1fr;
   }
+}
+
+.shop-card .shop-content {
+  margin-top: 1.25rem;
 }
 
 .shop-photo {
@@ -419,18 +423,6 @@ main section:first-child {
   height: auto;
   border-radius: 8px;
 }
-
-.shop-content h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
-.shop-content p {
-  font-weight: 700;
-}
-
-
 
 .find-grid {
   display: grid;
@@ -451,16 +443,6 @@ main section:first-child {
   border-radius: 8px;
 }
 
-.find-content h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
-.find-content > p {
-  font-weight: 700;
-}
-
 .events-list {
   list-style: none;
   padding: 0;
@@ -474,17 +456,18 @@ main section:first-child {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
 
 .event-date {
   color: var(--accent-orange);
-  font-weight: 800;
   font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
 
 .event strong {
   font-size: 1.1rem;
   color: var(--text-color);
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 .event span:last-child {
@@ -493,16 +476,6 @@ main section:first-child {
 
 .contact-section {
   max-width: 640px;
-}
-
-.contact-section h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
-.contact-section p {
-  font-weight: 700;
 }
 
 .contact-icons {
