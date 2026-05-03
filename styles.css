@@ -57,7 +57,6 @@ ul.nav-links {
 }
 
 nav ul:last-child a {
-  font-weight: 800;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -121,7 +120,6 @@ header.hero .overlay {
 
 header.hero h1 {
   color: var(--text-color);
-  font-weight: 800;
   letter-spacing: 0.2px;
 }
 
@@ -135,7 +133,6 @@ input[type='submit'] {
   background-color: var(--primary);
   color: #1a1a1a;
   border: 1px solid var(--primary-focus);
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -251,7 +248,6 @@ footer {
 
 footer p {
   margin: 0;
-  font-weight: 700;
   color: var(--text-color);
 }
 
@@ -501,14 +497,7 @@ footer .social a {
   margin-top: 4rem;
 }
 
-.newsletter-banner h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
 .newsletter-banner p {
-  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
