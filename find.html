@@ -7,7 +7,10 @@
     <meta name="description" content="Find Best Friend Books at upcoming pop-up events in Orange County, California." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -72,12 +75,28 @@
         <div class="footer-right">
           <a role="button" href="contact.html">Join Our Email List</a>
           <div class="social" aria-label="Social links">
-            <a href="https://www.instagram.com/bestfriendbookshop/" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+            <a
+              href="https://www.instagram.com/bestfriendbookshop/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                />
+              </svg>
               <span class="sr-only">Instagram</span>
             </a>
-            <a href="https://www.facebook.com/p/Best-Friend-Books-61579769481900/" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <a
+              href="https://www.facebook.com/p/Best-Friend-Books-61579769481900/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
               <span class="sr-only">Facebook</span>
             </a>
           </div>
@@ -87,7 +106,7 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
-      document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.hamburger').addEventListener('click', function () {
         var nav = this.closest('nav');
         nav.classList.toggle('nav-open');
         this.setAttribute('aria-expanded', nav.classList.contains('nav-open'));

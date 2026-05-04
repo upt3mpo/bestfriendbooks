@@ -1,14 +1,14 @@
 :root {
-  --primary: #F7B90E;
+  --primary: #f7b90e;
   --primary-hover: #dfa50c;
   --primary-focus: #b8840a;
-  --accent-orange: #F47C20;
-  --background-color: #FEF0E0;
+  --accent-orange: #f47c20;
+  --background-color: #fef0e0;
   --surface: #ffffff;
   --text-color: #111827;
   --muted-text: #374151;
   --link-color: #0f172a;
-  --border-color: #EBE4C9;
+  --border-color: #ebe4c9;
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
@@ -20,15 +20,21 @@ body {
   font-optical-sizing: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: var(--text-color);
   font-optical-sizing: auto;
   text-transform: uppercase;
   margin-top: 0;
 }
 
 a {
-  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -37,7 +43,7 @@ a {
 }
 
 p {
-  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -53,7 +59,7 @@ nav a {
 
 ul.nav-links {
   align-self: flex-end;
-  margin-bottom: -0.4rem;
+  margin-bottom: -0.3rem;
 }
 
 nav ul:last-child a {
@@ -85,6 +91,7 @@ nav ul:last-child a.active {
   height: 108px;
   width: auto;
   transform: translateY(-4px);
+  margin-left: -1rem;
 }
 
 .brand-text {
@@ -100,33 +107,6 @@ nav ul:last-child a.active {
   width: 100%;
 }
 
-header.hero {
-  background: url('images/banner.png') center/cover no-repeat;
-  min-height: 44vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-header.hero .overlay {
-  background: rgba(255, 255, 255, 0.88);
-  padding: 2.25rem 2rem;
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-  max-width: 72ch;
-}
-
-header.hero h1 {
-  color: var(--text-color);
-  letter-spacing: 0.2px;
-}
-
-header.hero p {
-  color: var(--muted-text);
-}
-
 a[role='button'],
 button,
 input[type='submit'] {
@@ -140,12 +120,6 @@ a[role='button']:hover,
 button:hover,
 input[type='submit']:hover {
   background-color: var(--primary-hover);
-}
-
-h1,
-h2,
-h3 {
-  color: var(--text-color);
 }
 
 p,
@@ -362,7 +336,8 @@ footer .social a {
 
   .brand-logo {
     height: 80px;
-    transform: translateY(20px);
+    transform: translateY(16px);
+    margin-left: -1rem;
   }
 
   .brand a {
@@ -370,9 +345,9 @@ footer .social a {
   }
 
   .brand-text {
-    height: 80px;
+    height: 60px;
     align-self: flex-end;
-    margin-bottom: -1.5rem;
+    margin-bottom: -1rem;
   }
 }
 
@@ -452,18 +427,18 @@ footer .social a {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
 .event-date {
   color: var(--accent-orange);
-  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
 .event strong {
   font-size: 1.1rem;
   color: var(--text-color);
-  font-family: "Sofia Sans Condensed", sans-serif;
+  font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
 .event span:last-child {
@@ -500,13 +475,3 @@ footer .social a {
 .newsletter-banner p {
   margin-bottom: 1.5rem;
 }
-
-.widget-placeholder {
-  border: 2px dashed var(--border-color);
-  border-radius: 8px;
-  padding: 3rem;
-  text-align: center;
-  color: var(--muted-text);
-  margin-top: 2rem;
-}
-
