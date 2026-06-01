@@ -351,12 +351,6 @@ footer .social a {
   }
 }
 
-@media (max-width: 768px) {
-  .hello-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .hello-photo {
   width: 100%;
   height: auto;
@@ -379,12 +373,6 @@ footer .social a {
   margin-inline: auto;
 }
 
-@media (max-width: 768px) {
-  .shop-2col {
-    grid-template-columns: 1fr;
-  }
-}
-
 .shop-card .shop-content {
   margin-top: 1.25rem;
 }
@@ -403,6 +391,8 @@ footer .social a {
 }
 
 @media (max-width: 768px) {
+  .hello-grid,
+  .shop-2col,
   .find-grid {
     grid-template-columns: 1fr;
   }
@@ -432,7 +422,6 @@ footer .social a {
 
 .event-date {
   color: var(--accent-orange);
-  font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
 .event strong {
@@ -442,8 +431,8 @@ footer .social a {
 }
 
 .event strong a {
-  font-size: 1.1rem;
   font-family: 'Sofia Sans Condensed', sans-serif;
+  color: var(--text-color);
 }
 
 .event span:last-child {
