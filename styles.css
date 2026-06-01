@@ -441,6 +441,11 @@ footer .social a {
   font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
+.event strong a {
+  font-size: 1.1rem;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
 .event span:last-child {
   color: var(--muted-text);
 }
